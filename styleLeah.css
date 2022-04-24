@@ -1,0 +1,150 @@
+header{
+    background-color: rgb(255, 127, 187);
+    grid-area: header;
+    grid-column: 1/4;
+    float:left
+}
+.gridwrapper{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+    "header header nav nav"
+    "main main aside aside"
+    "extra1 extra1 extra1 extra1";
+
+}
+h1{
+    grid-area: header;
+    color: rgb(186, 251, 244);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    text-align: left;
+    padding-top: 0px;
+    margin-top: 150px;
+    z-index: 1;
+    padding-left: 150px;
+    float: left;
+    text-transform: uppercase;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+p{
+    padding: 20px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    grid-area: nav;
+    font-size: 15px;
+    padding: 50px;
+    padding-top: 60px;
+    text-transform: uppercase;
+    background-color: rgb(255, 127, 187);
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+li{
+    display: inline;
+    text-align: center;
+    padding: 15px;
+    line-height: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    color: rgb(253, 71, 156);
+    grid-area: main;
+    padding: 10px;
+    padding-left: 0px;
+    text-align: center;
+    background-color: rgb(186, 251, 244);
+    border: rgb(186, 251, 244) solid 2px;
+}
+aside{
+    color: rgb(253, 71, 156);
+    grid-area: aside;
+    padding: 10px;
+    background-color: rgb(186, 251, 244);
+    padding-right: 150px;
+    border:rgb(186, 251, 244) solid 2px;
+}
+.extra1{
+    color: rgb(253, 71, 156);
+    grid-area: extra1;
+    padding: 10px;
+    background-color: rgb(186, 251, 244);
+    padding-top: 20px;
+}
+.logo{
+    color:black;
+    background-color: white;
+    filter: drop-shadow(5px 5px 5px black);
+    border-image: white fill 4px;
+    display: inline-block;
+}
+.circleBase{
+    border-radius: 50%;
+}
+.circle1{
+    width: 90px;
+    height: 90px;
+    border: 1px solid;
+}
+.circle2{
+    width: 90px;
+    height: 90px;
+    border: 1px solid;
+}
+.circle3{
+    width: 90px;
+    height: 90px;
+    border: 1px solid;
+}
+.circle4{
+    width: 90px;
+    height: 90px;
+    border: 1px solid;
+}
+.circle5{
+    width: 90px;
+    height: 90px;
+    border: 1px solid;
+}
+.circle6{
+    width: 90px;
+    height: 60px;
+    border: 1px solid;
+}
+a{
+    display: inline-block;
+    padding: 8px 11px;
+    color: rgb(253, 71, 156);
+    background-color: rgb(186, 251, 244);
+    grid-area: nav;
+    border: rgb(253, 71, 156);
+}
+a:link{
+    background-color: rgb(186, 251, 244);
+    border: 2px solid rgb(253, 71, 156);
+}
+a:hover{
+    background-color: lavenderblush;
+    cursor: pointer;
+}
+.Leah{
+    line-height: 60px;
+    text-align: center;
+    margin: 0px;
+}
