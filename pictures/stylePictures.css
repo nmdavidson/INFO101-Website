@@ -1,0 +1,79 @@
+header{
+    text-align: center;
+}
+body{
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: left;
+}
+a:hover {
+    color: #fdbb2d;
+}
+.button{
+    background: none;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}
+.nav-button{
+    background: none;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+.nav-button:hover{
+    background: none;
+    color: black;
+    text-decoration: line-through;
+}
+nav{
+    padding-top: -10%;
+    text-align: center;
+}
+.row{
+    border: solid;
+    display: flex;
+    flex-grow: 2;
+    size: 10%;
+    padding-left: 1.5%;
+    padding-right: 1.5%
+}
+.pad{
+    display: flex;
+    flex-grow: 2;
+}
+.l-col{
+    flex: 1;
+    flex-grow: 2;
+}
+.r-col{
+    flex: 1;
+    flex-grow: 2;
+    text-align: right;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+.display{
+    max-width: 70%;
+    height: auto;
+}
+ul{
+    list-style-type: square;
+}
+#email{
+    text-align: center;
+}

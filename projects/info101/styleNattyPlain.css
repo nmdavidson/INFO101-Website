@@ -1,0 +1,63 @@
+body{
+    padding-left: 10%;
+    padding-right: 10%;
+    background: white;
+    text-align: left;
+}
+.simple-button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.4s;
+}
+.simple-button:hover{
+    background-color: black;
+    color: white;
+}
+.simple-gradient-button{
+    background-color: #fdbb2d;
+    border: none;
+    color: #22c1c3;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.4s;
+}
+.simple-gradient-button:hover{
+    background-color: #22c1c3;
+    color: #fdbb2d;
+}
+nav{
+    padding-top: -10%;
+    /*background-color: blue;*/
+    text-align: center;
+}
+.row{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+.col h3{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.small{
+    max-width: 100%;
+    height: auto;
+}
+.display{
+    max-width: 30%;
+    height: auto;
+}
