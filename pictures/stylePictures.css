@@ -6,17 +6,8 @@ body{
     padding-right: 20%;
     text-align: left;
 }
-.link{
-    color: #de4c38;
-}
-.link:hover {
+a:hover {
     color: #fdbb2d;
-}
-.link:visited{
-    color: #b9e541;
-}
-.link:visited:hover{
-    color: #44570d;
 }
 .button{
     background: none;
@@ -54,22 +45,35 @@ nav{
     text-align: center;
 }
 .row{
+    border: solid;
     display: flex;
+    flex-grow: 2;
+    size: 10%;
+    padding-left: 1.5%;
+    padding-right: 1.5%
 }
-.col{
+.pad{
+    display: flex;
+    flex-grow: 2;
+}
+.l-col{
     flex: 1;
+    flex-grow: 2;
 }
-.small{
-    max-width: 100%;
-    height: auto;
+.r-col{
+    flex: 1;
+    flex-grow: 2;
+    text-align: right;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 .display{
-    max-width: 30%;
+    max-width: 70%;
     height: auto;
 }
 ul{
     list-style-type: square;
 }
-#banner{
-    float: left;
+#email{
+    text-align: center;
 }
