@@ -17,21 +17,132 @@
             <a class="nav-button" href="pictures/homePictures.html">pictures</a>
         </nav>
         <main>
+            <a href="https://plcynergy.com/wp-content/uploads/2021/01/PID-controller.jpg" title="PID diagram">
+                <img class="banner" src="https://plcynergy.com/wp-content/uploads/2021/01/PID-controller.jpg">
+            </a>
             <h2>PIDs: What are they and how do they work?</h2>
+            <h3>Or how to cook ribs perfectly for your beach cookout</h3>
             <p>
-                <div class="row">
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        This is where I will write my blogpost.
-                    </p>
-                </div>
+                I first encountered proportional-integral-derivative, or PID, control in a 
+                setting that until recently was unpopulated by this technology: consumer 
+                electronics. Even more uncommon was that the consumer electronic that 
+                introduced me to this technology was an instrument used for cooking, an 
+                area which on the surface is devoid of innovation and has relied on age-old 
+                technology since its humble beginnings.
+            <p>
+                One summer afternoon, waking up from a night of high-school-aged debauchery 
+                at my friend's house, I meandered into his kitchen to find his father bent over 
+                a YETI cooler with a cord running from it, plugged into the wall and steam 
+                emanating from within. Of course I was intrigued. I ventured over to inquire 
+                about what in fact I was witnessing. 
+            <p>
+                Peering into the cooler, I saw hunks of vacuum-sealed ribs bobbing in 
+                turbulent water and off to the side a slim cylinder clipped to the side of 
+                the cooler with a cord running to an outlet. I asked him what exactly I was 
+                looking at.
+            <p>
+                "Sous vide," he said, like I was supposed to know what that meant.
+            <p>
+                "What's that?," I replied.
+            <p>
+                He told me about this modern cooking technique, naturally modeled after a 
+                traditional French cooking style, of using warm water to raise the internal 
+                temperature of whatever is submerged. He was raising the temperature of the 
+                ribs in order to bring them to the beach and quickly char the outsides on the 
+                grill without having to worry about the meat being cooked through or standing 
+                by the grill for half-an-hour while they cooked as one would do normally. I 
+                found this quite clever, but still wondered why this contraption was necessary. 
+            <p>
+                He explained to me the nature of the temperature of water when it is heated on 
+                a stove, how it fluctuates depending on many factors&mdash;especially if using a 
+                resistive-heat electric stovetop&mdash;and how something called a PID controller, 
+                which was found inside his mysterious sous vide cylinder, was able to maintain 
+                a stable water temperature so that you could target the internal temperature of 
+                whatever you submerged to a decimal degree. I was fascinated.<hr>
+            <p>
+                Souse vide can be translated from French to mean "under vacuum." While the device
+                I described witnessing in my friend's kitchen is often referred to as souse vide or
+                a sous vide cooker, more accurate is to call it an immersion circulator and the technique
+                itself as souse vide. Though today the technique has found its way into some of the most 
+                prestigious restaurants in the world, the technology was originally developed with a much 
+                more humble aim. 
+            <p>
+                The technology and technique were introduced in scientific laboratories 
+                to maintain precise temperature control of immersion baths in lab conditions (thanks to the 
+                PID control, we're getting to that.) This naturally transitioned to using sous vide for
+                purposes like sterilization and pasteurization in settings like hospitals and large-scale
+                commerial food producers. They could vacuum seal instruments or food products, immerse them 
+                for a certain amount of time, and then remove them with the certainty that they reached the
+                specified temperature. Time was being saved and processes were being made safer, a win-win.
+            <p>
+                Chefs began to realize how this technique could allow them more precise control&mdash;in fact, 
+                drastically so&mdash; of the internal temperature of the food they were cooking, most
+                importantly the expensive cuts of protein that were notoriosully stubborn in revealing
+                the chemistry unfolding within them. It can't be overstated: this changed the game. Souse
+                vide cooking has since trickled down to the consumer level and has found its way into 
+                kitchens like that of my friend's father. Often overlooked, however, is the true technological
+                innovation that made this all possible. Let's take a few steps backwards. 
+                <a href="https://www.cooksillustrated.com/articles/1142-the-history-of-sous-vide-explained">
+                    Source
+                </a>
+                <hr>
+            <p>
+                Feedback control is one of those things that operates under the surface, holds so much
+                "control" over the functioning of our modern society, yet rarely gets the props it deserves,
+                much less the appreciation of its beneficiaries, most of whom would be incapable of telling
+                you what in fact it is or what it does. So I guess that begs the question... what is it and
+                what the hell does it do? I'm glad you asked.
+            <p>
+                The theory of feedback control, i.e. control theory, was developed at, where else, Bell Labs
+                in the 1930s. Like most consumer facing technological innovation, control systems have their
+                roots in military applications. In WWII, control systems were developed for applications such
+                as inteligent rocket control and unmanned aircraft surveillance. Today, control systems govern
+                nearly any "system" you can think of, especially those with some sort of autonomy. An immense 
+                amount of brain-power is currently being used to devise inteligent algorithms for control systems.
+                Do autonomous vehicles, self-landing rockets, humanoid robots ring any bells? (Hey Elon) Control
+                systems do just what the sound like: they control systems. Feedback control systems tweak this by
+                introducing outputs of the system as inputs back into the system. By correctly interpreting this
+                input, or system "feedback," systems can stabilize.
+            <p>
+                This is done by comparing the feedback of the system to a reference and generating an error as a
+                result. Depending on the nature of the error and the system itself, the system may be able respond
+                to this feedback by changing its output in a hope to lessen the error present in the system. A
+                natural question is why is any of this necessary? As it turns out, many systems are inherently
+                unstable or we are unable to construct them without introducing a certain degree of uncertainty.
+                Feedback systems allow systems to adapt to these problems without destroying the system or having
+                to intermittently stop the system.
+            <p>
+                There are a few fundamental elements necessary to be familiar with in order to undestand
+                the behavior of a feedback control system. They are:
+                <ul>
+                    <li>
+                        the plant: the actual system being controlled. Each plant has different characteristics
+                        and behavior.
+                    </li>
+                    <li>
+                        actuators: these are elements of the control system that "allow the manipulation of
+                        control variables in a process."
+                    </li>
+                    <li>
+                        sensors: most people are familiar with sensors in that they "sense" what happens around them.
+                        Sensors come in any and every form to fit any imaginable applications. They can be used to measure
+                        temperature, pressure, velocity, light intensity, etc. 
+                    </li>
+                    <li>
+                        controllers: the brains of the control system. They determine how the system should respond to
+                        inputs, more specifically, they tell the actuators how to respond to measurements from the sensors.
+                    </li>
+                </ul>
+            <p>
+                One of the simplest and often misunderstood feedback systems present in your daily life
+                is the contraption that lives in the back of your toilet. While this is a mechanical feedback
+                system, it is a feedback system nonetheless. The actuator in this system is the valve that allows
+                water to enter the tank of the toilet. The sensor is the float, or that plastic bulb, that determines at what
+                level the water in the tank is currently. The controller is the mechanism with which the float
+                can close the valve when it reaches the correct height, or water level. You might think "BFD" but
+                this system is actually quite robust. It adapts to low water flow or a faulty drain and ensures
+                a constant flush by maintaining the same water level each time. Its something we rarely, if ever,
+                think about, that is, until it fails.
             </p>
         </main>
         <footer>
