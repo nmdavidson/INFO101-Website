@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <title>Natty's Website</title><!--tab label-->
         <link id="stylesheet" rel="stylesheet" href="styleHome.css">
-        <link rel="icon" href=""><!--tab favicon-->
+        <link rel="icon" href="">
     </head>
     <body>
+        <!--currently no header, kinda like how it looks-->
         <header>
         </header>
         <nav>
@@ -141,8 +142,21 @@
                 can close the valve when it reaches the correct height, or water level. You might think "BFD" but
                 this system is actually quite robust. It adapts to low water flow or a faulty drain and ensures
                 a constant flush by maintaining the same water level each time. Its something we rarely, if ever,
-                think about, that is, until it fails.
+                think about. That is, until it fails.
+            <p>
+                Now this control is specified to this application and naturally wouldn't translate to many other
+                applications. Therefore it is often necessary to specify a controller to its application. However,
+                there are broad classes of controllers that have applications in a broader range of applications.
+                One such of these classes is PID controllers, commonly referred to simply as PIDs. The proportional-integral-derivative
+                controller consists of three main components that you may have guessed by its name are the proportional 
+                controller, the integral controller, and the derivative controller. Note in this sense, that PIDs are 
+                controllers constructed from other controllers. Let's break these down individually to understand what
+                a PID is doing as a whole. 
+            <p>
+
             </p>
+            <a href="https://www.cim.mcgill.ca/~ialab/ev/Intro_control1.pdf">Source 2</a>
+            <a href="https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID">Source 3</a>
         </main>
         <footer>
             <a class="nav-button" title="email me" href="mailto:nmdavidson@umass.du">email me</a>
