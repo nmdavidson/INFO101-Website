@@ -74,6 +74,13 @@ ul{
     width: 100%;
     height: auto;
 }
+.small-banner{
+    width: 75%;
+    height: auto;
+}
+.center{
+    text-align: center;
+}
 #banner{
     float: left;
 }
