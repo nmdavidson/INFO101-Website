@@ -147,19 +147,23 @@
                 Now this control is specified to this application and naturally wouldn't translate to many other
                 applications. Therefore it is often necessary to specify a controller to its application. However,
                 there are broad classes of controllers that have applications in a broader range of applications.
-                One such of these classes is PID controllers, commonly referred to simply as PIDs. The proportional-integral-derivative
-                controller consists of three main components that you may have guessed by its name are the proportional 
-                controller, the integral controller, and the derivative controller. Note in this sense, that PIDs are 
-                controllers constructed from other controllers. Let's break these down individually to understand what
-                a PID is doing as a whole. 
+                One such of these classes, in fact the most commonly used in industry, is PID controllers, commonly 
+                referred to simply as PIDs. The proportional-integral-derivative controller consists of three main 
+                components that you may have guessed by its name are the proportional controller, the integral controller, 
+                and the derivative controller. Note in this sense, that PIDs are controllers constructed from other 
+                controllers. Let's break these down individually to understand what a PID is doing as a whole. 
             <p>
                 <a href="table.tiff" title="P, I, and D controller characteristics">
                     <img class="banner" src="table.tiff">
                 </a>
-                Note: CL response is referring to closed loop response, 
                 <h4>Proportional Control</h4><br>
                 This may seem rather self explanatory, but it is important to understand how this controller captures
-                scenarios that render PIDs as effective as they are. 
+                scenarios that render PIDs as effective as they are. Proportional controllers tend to react quickly, but
+                overshoot and thus reduce, but don't minimize, steady-state error. They do this by proportionally scaling 
+                the output response relative to the error. This can be seen in the the first term of the equation below.
+                <h4>Integral Control</h4><br>
+                
+
             </p>
             <a href="https://www.cim.mcgill.ca/~ialab/ev/Intro_control1.pdf">Source 2</a>
             <a href="https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID">Source 3</a><br>
