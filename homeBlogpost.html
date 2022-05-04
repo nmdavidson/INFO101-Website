@@ -21,7 +21,7 @@
                 <img class="banner" src="https://plcynergy.com/wp-content/uploads/2021/01/PID-controller.jpg">
             </a>
             <h2>PIDs: What are they and how do they work?</h2>
-            <h3>Or how to cook ribs perfectly for your beach cookout</h3>
+            <h3>Or, how to cook ribs perfectly for your beach cookout</h3>
             <p>
                 I first encountered proportional-integral-derivative, or PID, control in a 
                 setting that until recently was unpopulated by this technology: consumer 
@@ -162,20 +162,30 @@
                 This may seem rather self explanatory, but it is important to understand how this controller captures
                 scenarios that render PIDs as effective as they are. Proportional controllers tend to react quickly, but
                 overshoot and thus reduce, but don't minimize, steady-state error. They do this by proportionally scaling 
-                the output response relative to the error. This can be seen in the the first term of the equation below.
+                the output response relative to the error. This can be seen in the the first term of the equation in Figure 3.
+                The remaining error is called static error and will be handled by the integral controller.
                 <h4>Integral Control</h4>
                 The integral controller "remembers" the error by integrating the error signal over time. It compensates
-                with constant gain relative to the cumulative sum of the error.
+                with constant gain relative to the cumulative sum of the error. By effectively incrementing it's response
+                signal, it is able to close the gap of the static error. In doing so, it also counteracts oscillations that 
+                may occur from the proportional controller as the error becomes smaller and smaller. This is seen in the 
+                integral term in Figure 3.
                 <h4>Derivative Control</h4>
-                
+                The derivative controller's response is propoportional to the derivative of the error signal. This is 
+                "anticipating" future error and helps to dampen the control signal, or lessen overshoot.
+            <p>
+                <div class="center">
+                    <a href="controlDiagram.png" title="PID controller diagram" target="_blank">
+                        <img class="banner" src="controlDiagram.png">
+                    </a>
+                </div>
+                As seen in Figure 1 atop the page and eviden from the equation in Figure 3, the PID controller works by
+                summing the outputs of each independent controller. 
 
-                Notice in all three of these subprocesses (controllers) I have stated the PID is in each instance responding 
-                with constant gain, usually a specification of the system. While this is common in practice, it is not necessary. 
-                In fact, this gain can be described 
 
 
-            </p>
-            <a href="https://www.cim.mcgill.ca/~ialab/ev/Intro_control1.pdf">Source 2</a>
+
+            <a href="https://www.cim.mcgill.ca/~ialab/ev/Intro_control1.pdf">Source 2</a><br>
             <a href="https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID">Source 3</a><br>
         </main>
         <footer>
