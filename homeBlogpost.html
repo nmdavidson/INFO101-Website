@@ -7,7 +7,6 @@
         <link rel="icon" href="">
     </head>
     <body>
-        <!--currently no header, kinda like how it looks-->
         <header>
         </header>
         <nav>
@@ -194,8 +193,10 @@
                     </a>
                 </div>
                 Figure 4 introduces parameters to represent time values. This is helpful because almost always, what we are
-                interested in is how the system responds over time. 
-
+                interested in is how the system responds over time. But in practice, we fail to represent time continuosly
+                as we require data that are usable by a computer and thus rely on analog-to-digital converters to represent
+                continuous analog inputs as discretized outputs. Therefore, it is necessary to frame our output signal as that
+                which would be produced by a digital controller.
                 <div class="center">
                     <a href="PIDfuncTimeParamDisc.png" title="PID control function with time parameters, discretized" target="_blank">
                         <img class="small-banner" src="PIDfuncTimeParamDisc.png">
@@ -204,7 +205,7 @@
                 T is sometimes referred to as the "loop cycle." In practice, the loop cycle is determined by the duty cycle
                 of the components of the system, namely the actuators. Things like heating elements or valves have
                 a working life measured in cycles (more specifically, a probability distribution of cycles), i.e. how many times 
-                they heat up and cool down or open and close. Sampling too quickly will wear out components by over-cycling 
+                they heat up and cool down or open and close, etc. Sampling too quickly will wear out components by over-cycling 
                 and thus lowering the number of cycles (shifting the distribution and thus lowering the mean in the case of a 
                 linear distribution.) For instance, Figure 6 shows a sample model of a PDF vs stress vs time relationship where
                 the PDF is a distribution of "reliabilty" over time of some component.
@@ -213,6 +214,10 @@
                         <img class="small-banner" src="PDFstressTime.png">
                     </a>
                 </div>
+                We have covered a lot about PIDs and their practical uses, as well as how they are used in industry. Much more
+                could be said, but as this post is meant as an introduction to the topic, we will leave our discussion here. Please
+                consult the linked references and further readings found at the bottom of the page for more information on this
+                interesting topic.
 
 
             <br>
