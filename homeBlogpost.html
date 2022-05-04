@@ -82,7 +82,12 @@
                 the chemistry unfolding within them. It can't be overstated: this changed the game. Souse
                 vide cooking has since trickled down to the consumer level and has found its way into 
                 kitchens like that of my friend's father. Often overlooked, however, is the true technological
-                innovation that made this all possible. Let's take a few steps backwards.
+                innovation that made this all possible. Let's take a few steps backwards. 
+                <cite>
+                    <a href="https://www.cooksillustrated.com/articles/1142-the-history-of-sous-vide-explained">
+                        Cook's Illustrated
+                    </a>
+                </cite>
                 <hr>
             <p>
                 Feedback control is one of those things that operates under the surface, holds so much
@@ -141,6 +146,11 @@
                 this system is actually quite robust. It adapts to low water flow or a faulty drain and ensures
                 a constant flush by maintaining the same water level each time. Its something we rarely, if ever,
                 think about. That is, until it fails.
+                <cite>
+                    <a href="https://www.cim.mcgill.ca/~ialab/ev/Intro_control1.pdf">
+                        Coronado Systems
+                    </a>
+                </cite>
             <p>
                 Now this control is specified to this application and naturally wouldn't translate to many other
                 applications. Therefore it is often necessary to specify a controller to its application. However,
@@ -171,6 +181,16 @@
                 <h4>Derivative Control</h4>
                 The derivative controller's response is propoportional to the derivative of the error signal. This is 
                 "anticipating" future error and helps to dampen the control signal, or lessen overshoot.
+                <cite>
+                    <a href="https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID">
+                        UMichigan
+                    </a>
+                </cite>, 
+                <cite>
+                    <a href="https://www.crystalinstruments.com/blog/2020/8/23/pid-control-theory">
+                        Crystalline Instruments
+                    </a>
+                </cite>
             <p>
                 <div class="center">
                     <a href="PIDfunction.png" title="PID control function" target="_blank">
@@ -199,6 +219,11 @@
                         <img class="small-banner" src="PIDfuncTimeParamDisc.png">
                     </a>
                 </div>
+                <cite>
+                    <a href="https://www.crystalinstruments.com/blog/2020/8/23/pid-control-theory">
+                        Crystalline Instruments
+                    </a>
+                </cite><br>
                 T is sometimes referred to as the "loop cycle." In practice, the loop cycle is determined by the duty cycle
                 of the components of the system, namely the actuators. Things like heating elements or valves have
                 a working life measured in cycles (more specifically, a probability distribution of cycles), i.e. how many times 
@@ -207,17 +232,35 @@
                 linear distribution.) For instance, Figure 6 shows a sample model of a PDF vs stress vs time relationship where
                 the PDF is a distribution of "reliabilty" over time of some component. Notice how as the stress, or cycle-rate,
                 increases, the probability of failure increases over a shorter interval of time.
+                <cite>
+                    <a href="https://www.ni.com/en-us/innovations/white-papers/06/pid-theory-explained.html">
+                        National Instruments
+                    </a>
+                </cite>
                 <div class="center">
                     <a href="PDFstressTime.png" title="PDF vs stress vs time" target="_blank">
                         <img class="small-banner" src="PDFstressTime.png">
                     </a>
                 </div>
+                <cite>
+                    <a href="https://reliawiki.org/images/7/78/Pdfvstimeandstress.png">
+                        ReliaWiki
+                    </a>
+                </cite><br>
                 We have covered a lot about PIDs and their practical uses, as well as how they are used in industry. Much more
                 could be said, but as this post is meant as an introduction to the topic, we will leave our discussion here. Please
                 consult the linked references and further readings found at the bottom of the page for more information on this
                 interesting topic. A tasty application of PIDs (sous vide) follows.
                 <hr>
-                <h4>Sous Vide Ribs</h4>
+                <h4>
+                    Sous Vide Ribs
+                    <cite>
+                        <a href="https://www.saveur.com/char-smoked-baby-back-ribs-recipe/">
+                            Saveur
+                        </a>
+                    </cite>
+                </h4>
+                
                 <h5>What You Will Need</h5>
                 <ul>
                     <li>4-qt. Saucepan</li>
@@ -289,8 +332,8 @@
                 to use the technique of sous vide in his kitchen!
                 <hr>
             <h4>References</h4>
-            Sous vide history <a href="https://www.cooksillustrated.com/articles/1142-the-history-of-sous-vide-explained">source</a>
-            Coronado systems intro. to feedback control <a href="https://www.cim.mcgill.ca/~ialab/ev/Intro_control1.pdf">source</a><br>
+            Sous vide history <a href="https://www.cooksillustrated.com/articles/1142-the-history-of-sous-vide-explained">source</a><br>
+            Coronado Systems intro. to feedback control <a href="https://www.cim.mcgill.ca/~ialab/ev/Intro_control1.pdf">source</a><br>
             UMichigan PID intro. <a href="https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID">source</a><br>
             PID control theory <a href="https://www.crystalinstruments.com/blog/2020/8/23/pid-control-theory">source</a><br>
             National Instruments: PID theory <a href="https://www.ni.com/en-us/innovations/white-papers/06/pid-theory-explained.html">source</a><br>
