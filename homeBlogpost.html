@@ -164,6 +164,14 @@
                 overshoot and thus reduce, but don't minimize, steady-state error. They do this by proportionally scaling 
                 the output response relative to the error. This can be seen in the the first term of the equation below.
                 <h4>Integral Control</h4>
+                The integral controller "remembers" the error by integrating the error signal over time. It compensates
+                with constant gain relative to the cumulative sum of the error.
+                <h4>Derivative Control</h4>
+                
+
+                Notice in all three of these subprocesses (controllers) I have stated the PID is in each instance responding 
+                with constant gain, usually a specification of the system. While this is common in practice, it is not necessary. 
+                In fact, this gain can be described 
 
 
             </p>
