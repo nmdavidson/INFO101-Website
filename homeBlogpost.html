@@ -19,7 +19,7 @@
         <main>
             <div class="center">
                 <a href="controlDiagram.png" title="PID controller diagram" target="_blank">
-                    <img class="banner" src="controlDiagram.png">
+                    <img class="small-banner" src="controlDiagram.png">
                 </a>
             </div>
             <h2>PIDs: What are they and how do they work?</h2>
@@ -181,12 +181,27 @@
                         <img class="small-banner" src="PIDfunction.png">
                     </a>
                 </div>
-                As seen in Figure 1 atop the page and eviden from the equation in Figure 3, the PID controller works by
-                summing the outputs of each independent controller. 
+                As seen in Figure 1 atop the page and evident from the equation in Figure 3, the PID controller works by
+                summing the outputs of each independent controller. The PID is only effective if the gain constants K<sub>p</sub>, 
+                K<sub>i</sub>, and K<sub>d</sub> are chosen in such a way as to pruduce stable feedback in the system. A natural
+                question is how one goes about choosing or determining these constants. While trial and error can produce acceptable
+                results, brute force is usually a last resort. Tuning algrothims, such as Ziegler-Nichols or Åström-Hägglund, among
+                others, have been developed to efficiently solve this problem. It can be more helpful to reframe the function in
+                Figure 3 to help us understand a little better how this is done.
+                
+                <div class="center">
+                    <a href="PIDfuncTimeParam.png" title="PID control function with time parameters" target="_blank">
+                        <img class="small-banner" src="PIDfuncTimeParam.png">
+                    </a>
+                </div>
 
+                <div class="center">
+                    <a href="PIDfuncTimeParamDisc.png" title="PID control function with time parameters, discretized" target="_blank">
+                        <img class="small-banner" src="PIDfuncTimeParamDisc.png">
+                    </a>
+                </div>
 
-
-
+            <br>
             <a href="https://www.cim.mcgill.ca/~ialab/ev/Intro_control1.pdf">Source 2</a><br>
             <a href="https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID">Source 3</a><br>
             <a href="https://plcynergy.com/wp-content/uploads/2021/01/PID-controller.jpg" title="PID diagram" target="_blank">Figure 1 Source</a>
